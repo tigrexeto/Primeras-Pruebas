@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width" initial-scale="1.0">
+  <link rel="stylesheet" href="styles.css">
+<title>Encuesta Ramen</title>
+</head>
+
+<body>
+  <main>
+    <div class="encabezado"><h1 id="title">Tora Ramen House</h1>
+    <p id="description">Ayuda a Tigretón a ofrecer un servicio exquisito rellenando esta breve encuesta</p></div>
+    <div class="cuestionario">
+    <form id="survey-form">
+      <label for="name" id="name-label">Nombre: <input placeholder="Chelo García Cortés" id="name" type="text" class="recuadro" required></input></label>
+      <label id="email-label" for="email">Email: <input placeholder="chelitodisfrutona@gmail.com" id="email" type="email" class="recuadro" required></input></label>
+      <label for="number" id="number-label">Edad: <input id="number" type="number" min="5" max="120" placeholder="5-120"></input></label>
+      <label for="dropdown">Qué creación de nuestro itamae-san te hace exclamar "oishii!"  <select id="dropdown">
+        <option>Selecciona</option>
+        <option>Ramen Imperial</option>
+        <option>Takoyaki de la Paqui </option>
+        <option>Salmorejo de Kimchi</option>
+        <option>Onigiri de Dulce de leche</option>
+        <option>(Yo solo vengo por el sake)</option>
+      </select></label>
+      <p>Cómo puedo vincular este texto a los radiobuttons sin usar p?</p>
+      <label for="radio1"><input id="radio1" type="radio" name="puntitos" value="yes"> radio1</input></label>
+       <label for="radio2"><input id="radio2" type="radio" name="puntitos" value="no"> radio2</input></label>
+      <p>Cómo puedo vincular este texto a los checkbox sin usar p?</p>
+      <label for="cbox1"><input type="checkbox" id="cbox1" value="cbox1" name="nosetodavia"> cbox1</input></label>
+      <label for="cbox2"><input type="checkbox" id="cbox2" value="cbox2" name="nosetodavia"></input>cbox2</label>
+      <label for="cbox3"><input type="checkbox" id="cbox3" value="cbox3" name="nosetodavia"></input>cbox3</label>
+      <label for="cbox4"><input type="checkbox" id="cbox4" value="cbox4" name="nosetodavia"></input>cbox4</label>
+      <label for="cbox5"><input type="checkbox" id="chbox5" value="cbox5" name="nosetodavia"></input>cbox5</label>
+       <label for="textarea">¿Quieres decirnos algo? Te leemos: <textarea id="textarea" placeholder="¿Se permite la entrada a nekos? Miau!" rows="6" cols="38""></textarea></label>
+       <label for="submit"><input type="submit" id="submit"></input></label>
+       <!-- he puesto submit en label porque así tiene padding, pero tendría que buscar otro modo \-->
+    </form>
+    </div>
+    </main>
+    <footer>&copy; Izan-san</footer>
+
+  </body>
+</html>
